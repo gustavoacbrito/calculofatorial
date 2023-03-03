@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         @media screen and (max-width:760px) {
+            .container {
+            max-width: 600px;
+            padding: 20px;
+            margin: 20px auto;
+            display: grid;
+            align-content: center;
+            justify-content: center;
+        }
+        .paragrafo{
+            text-align: center;
+        }
+        .linha{
+            display: grid;
+            
+        }
+        .grid-item{
+            align-self: center;
+            justify-self: center;
+        }
+        #caixa_de_entrada{
+            font-size: 1.2em;
+            text-align: center;
+            color: red;
+            font-weight: bold;
+        }
+        #resposta{
+            font-size: 1.2em;
+            text-align: center;
+            color: red;
+            font-weight: bold;
+            white-space: pre-wrap;
+            height:90px;
+        }
+
+        #botao{
+            width: 200px;
+            height: 40px;
+            font-size: 1.5em;
+
+        }
+
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+        html, body{
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+            background-color: rgb(175, 175, 238);
+        }
+        .container{
+            max-width: 1080px;
+            padding: 20px;
+            margin: 20px auto;
+            display: grid;
+            align-content: center;
+            justify-content: center;
+        }
+        .titulo{
+            text-align: center;
+            color: yellow;
+        }
+        .input{
+            width: 300px;
+        }
+        #caixa_de_entrada{
+            font-size: 1.2em;
+            text-align: center;
+            color: red;
+            font-weight: bold;
+        }
+        #resposta{
+            font-size: 1.3em;
+            text-align: center;
+            color: red;
+            font-weight: bold;
+            white-space: pre-wrap;
+            height:90px;
+        }
+
+        #botao{
+            width: 200px;
+            height: 40px;
+            font-size: 1.5em;
+
+        }
+        
+        
+       
+        
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="titulo">Cálculo de Fatorial!</h1>
+        <p class="paragrafo">Essa pagina tem como propósito apenas treino e estudo</p>
+        
+        <div>
+            <table>
+                <tr class="linha">
+                    <th class="grid-item">Digite um um número para calcular o fatorial:</th>
+                    <td class="grid-item"><input class="input" id="caixa_de_entrada" type="text"></td>
+                    <td class="grid-item"><button id="botao">Calcular</button></td>
+                </tr>
+                <tr class="linha">
+                    <th class="grid-item">Resultado:</th>
+                    <td class="grid-item"><textarea class="input" id="resposta" type="text" name="n" readonly></textarea></td>
+                    <td class="grid-item"></td>
+                </tr>
+            </table>
+        
+        </div>
+    </div>
+    <script src="fatorial.js"></script>
+    
+</body>
+</html>
