@@ -16,9 +16,9 @@ function fatorial() {
       
     }
     else{ 
-      let i;
+      
       var produto = 1;
-      for ( i=2;i<=Number.parseInt(n);i++)
+      for (let i=2;i<=Number.parseInt(n);i++)
       produto *= i;
       resultado = produto;
       
